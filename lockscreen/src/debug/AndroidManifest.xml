@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beautycoder.pflockscreen">
+
+    <application>
+        <activity
+            android:name="com.beautycoder.pflockscreen.activities.TestActivity"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+    </application>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+</manifest>
