@@ -29,19 +29,14 @@ import com.foxitImageLock.lockscreen.security.PFResult;
 import com.foxitImageLock.lockscreen.viewmodels.PFPinCodeViewModel;
 import com.foxitImageLock.lockscreen.views.PFCodeView;
 
-/**
- * Created by Aleksandr Nikiforov on 2018/02/07.
- * <p>
- * Lock Screen Fragment. Support pin code authorization and
- * fingerprint authorization for API 23 +.
- */
+
 public class PFLockScreenFragment extends Fragment {
 
     private static final String TAG = PFLockScreenFragment.class.getName();
 
     private static final String FINGERPRINT_DIALOG_FRAGMENT_TAG = "FingerprintDialogFragment";
 
-    private static final String INSTANCE_STATE_CONFIG = "com.beautycoder.pflockscreen.instance_state_config";
+    private static final String INSTANCE_STATE_CONFIG = "com.foxitImageLock.lockscreen.instance_state_config";
     private final PFPinCodeViewModel mPFPinCodeViewModel = new PFPinCodeViewModel();
     private View mFingerprintButton;
     private View mDeleteButton;

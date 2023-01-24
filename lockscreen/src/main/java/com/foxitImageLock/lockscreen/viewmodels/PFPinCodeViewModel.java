@@ -36,12 +36,7 @@ public class PFPinCodeViewModel extends ViewModel {
     public LiveData<PFResult<Boolean>> delete() {
         final PFLiveData<PFResult<Boolean>> liveData = new PFLiveData<>();
         PFSecurityManager.getInstance().getPinCodeHelper().delete(
-                new PFPinCodeHelperCallback<Boolean>() {
-                    @Override
-                    public void onResult(PFResult<Boolean> result) {
-                        liveData.setData(result);
-                    }
-                }
+                result -> liveData.setData(result)
         );
         return liveData;
     }
@@ -49,12 +44,7 @@ public class PFPinCodeViewModel extends ViewModel {
     public LiveData<PFResult<Boolean>> isPinCodeEncryptionKeyExist() {
         final PFLiveData<PFResult<Boolean>> liveData = new PFLiveData<>();
         PFSecurityManager.getInstance().getPinCodeHelper().isPinCodeEncryptionKeyExist(
-                new PFPinCodeHelperCallback<Boolean>() {
-                    @Override
-                    public void onResult(PFResult<Boolean> result) {
-                        liveData.setData(result);
-                    }
-                }
+                result -> liveData.setData(result)
         );
         return liveData;
     }

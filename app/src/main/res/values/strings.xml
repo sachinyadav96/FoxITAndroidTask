@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Demo</string>
+    <string name="app_name">FoxIT Task</string>
     <string name="enter_text_to_search">Enter text to search</string>
     <string name="oops_no_data_found">Oops no data found! Enter text to search into the pixabay</string>
 
